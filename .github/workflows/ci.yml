@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e .
-          spacy download en_core_web_sm
+          pip install en_core_web_sm==3.2.0
           pip install pre-commit pytest
 
       - name: Run tests
